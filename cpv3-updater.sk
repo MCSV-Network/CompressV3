@@ -1,0 +1,21 @@
+
+command /cpv3update:
+	permission: admin
+	trigger:
+		cpv3update()
+
+
+function cpv3update():
+	send "[CPV3] Updating CompressV3..." to console
+	cpv3repl("plugins/Skript/scripts/cpv3.sk", "https://github.com/MCSV-Network/CompressV3/raw/main/cpv3.sk")
+#	cpv3repl("plugins/Skript/scripts/cpv3.sk", "https://github.com/MCSV-Network/CompressV3/raw/main/cpv3.sk") stuff
+	wait 2 tick
+	send "[CPV3] Reloading CompressV3..." to console
+	reload script "cpv3.sk"
+	send "[CPV3] Done!"
+
+
+function cpv3repl(path: text url: text):
+	delete file {_path}
+	wait a tick
+	download file from {_url} to file {_path}
