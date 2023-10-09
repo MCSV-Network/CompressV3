@@ -1,1 +1,17 @@
-#!Indev
+#*CPV3 - by ringoXD
+
+#!==DO NOT EDIT==================================
+Variables:
+	#*Prefix
+	{cpv3_prefix} = "&6[&bCompressV3&6]&r"
+options:
+	version: 3.0.0-dev
+	cpv3api: https://github.com/MCSV-Network/HomeV3/raw/main/
+#!==DO NOT EDIT==================================
+
+	#*==OPTIONS==================================
+
+	checkupdate: true #*アップデートをチェックするかどうか(デフォルト: true)
+
+	#*==OPTIONS==================================
+	
